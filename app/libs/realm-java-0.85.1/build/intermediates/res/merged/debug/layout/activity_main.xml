@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/register_button"
+        android:id="@+id/textViewRegister"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appLogo"
+        android:src="@drawable/quit_smoking_green"
+        android:layout_marginBottom="89dp"
+        android:layout_above="@+id/usernameText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginButton"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/passwordText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameText"
+        android:layout_centerVertical="true"
+        android:inputType="text"
+        android:layout_alignRight="@+id/passwordText"
+        android:layout_alignEnd="@+id/passwordText"
+        android:layout_alignLeft="@+id/passwordText"
+        android:layout_alignStart="@+id/passwordText"
+        android:hint="Username"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordText"
+        android:linksClickable="false"
+        android:layout_below="@+id/usernameText"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:gravity="center"/>
+
+<!--    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Darren/BitBucket/SmokeWise/app/src/main/res/layout/activity_main.xml -->

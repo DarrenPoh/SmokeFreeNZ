@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.darren.darren.smokewise" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.darren.darren.smokewise.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.darren.darren.smokefreenz.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/smokefree_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider994871643937332"
+                  android:name="com.facebook.FacebookContentProvider"
+                  android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Motivation"
+            android:label="@string/title_activity_motivation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".LifeBenefits"
+            android:label="@string/title_activity_life_benefits"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ExtraHelp"
+            android:label="@string/title_activity_extra_help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LifeBenefitsMoney"
+            android:label="@string/title_activity_life_benefits_money"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account" >
+        </activity>
+        <activity
+            android:name=".LifeBenefitsTime"
+            android:label="@string/title_activity_life_benefits_time"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LifeBenefitsHealth"
+            android:label="@string/title_activity_life_benefits_health"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Drawer"
+            android:label="@string/title_activity_drawer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WatchVideo"
+            android:label="@string/title_activity_watch_video"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Health"
+            android:label="@string/title_activity_health"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Finances"
+            android:label="@string/title_activity_finances"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".JobProspects"
+            android:label="@string/title_activity_job_prospects"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Looks"
+            android:label="@string/title_activity_looks"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Others"
+            android:label="@string/title_activity_others"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Social"
+            android:label="@string/title_activity_social"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AccountRegistration"
+            android:label="@string/title_account_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        //RZLTS Push Service
+        <activity
+            android:name="com.rzlts.appinbox.InboxActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.rzlts.appinbox.SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="com.rzlts.appinbox.NotificationActivity" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.darren.darren.smokefreenz" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.rzlts.appinbox.service.GcmMessageHandler"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Survey"
+            android:label="@string/title_activity_survey" >
+        </activity>
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

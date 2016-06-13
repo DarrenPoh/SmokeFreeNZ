@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/sky"
+    android:id="@+id/mainActivityLayout">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textViewEmail"
+        android:inputType="text"
+        android:hint="@string/email"
+        android:gravity="center"
+        android:background="#90FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:background="#90FFFFFF"
+        android:id="@+id/textViewPassword"
+        android:linksClickable="false"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loginButton"
+            android:background="@color/btn_login_bg"
+            android:id="@+id/loginButton"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/register_button"
+        android:id="@+id/textViewRegister"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:textStyle="bold"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/support"
+        android:id="@+id/textViewSupport"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <!--    <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />-->
+
+<!--    <com.facebook.widget.LikeView
+        android:id="@+id/like_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />-->
+
+</RelativeLayout>

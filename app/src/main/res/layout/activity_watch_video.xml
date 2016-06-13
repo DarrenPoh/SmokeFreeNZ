@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/skypixlr2"
+    tools:context="com.darren.darren.smokewise.WatchVideo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/upload_video_p1"
+        android:id="@+id/textViewMotivation"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_video"
+        android:id="@+id/buttonUploadVideo"
+        android:layout_alignTop="@+id/buttonRemoveVideo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/roundcorner"
+        android:padding="10dp"/>
+
+    <VideoView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView1"
+        android:layout_below="@+id/textViewMotivation"
+        android:paddingBottom="20dp"
+        android:layout_above="@+id/buttonUploadVideo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_facebook_videos"
+        android:id="@+id/buttonFacebookVideos"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/roundcorner"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remove_video"
+        android:id="@+id/buttonRemoveVideo"
+        android:layout_above="@+id/buttonFacebookVideos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/roundcorner"
+        android:padding="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/skypixlr2"
+    tools:context="com.darren.darren.smokewise.Survey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+    <TextView android:text="@string/survey_p1" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSurveyp1"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/present_health"
+                    android:id="@+id/checkBoxHealth"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/appearance"
+                    android:id="@+id/checkBoxAppearance"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                >
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family_members"
+                    android:id="@+id/checkBoxFamily"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role_modelling"
+                    android:id="@+id/checkBoxRole"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/employment"
+                    android:id="@+id/checkBoxEmployment"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/financial_benefits"
+                    android:id="@+id/checkBoxFinancial"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_needs"
+                    android:id="@+id/checkBoxSocial"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nicotine_treatment"
+                    android:id="@+id/checkBoxNicotine"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:id="@+id/checkBoxOther"
+                    android:layout_weight=".5"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/complete"
+                android:id="@+id/buttonComplete"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/roundcorner"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/skypixlr2"
+
+    tools:context="com.darren.darren.smokewise.LifeBenefitsTime">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/days_since"
+                android:textStyle="bold"
+                android:id="@+id/textViewDaysQuit1"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textViewDaysQuit2"
+                android:text="00"
+                android:textSize="70sp"
+                android:layout_below="@+id/textViewDaysQuit1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/smoking_quit_date"
+                android:id="@+id/textViewSmokingQuit"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textViewSmokingQuit2"
+                android:layout_below="@+id/textViewSmokingQuit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lifespan_regained"
+                android:textStyle="bold"
+                android:id="@+id/textViewLifeRegained1"
+                android:layout_below="@+id/textViewSmokingQuit2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textViewLifeRegained2"
+                android:layout_below="@+id/textViewLifeRegained1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="00" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

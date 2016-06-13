@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">SmokeFree NZ</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_survey">Survey</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_motivation">Motivation</string>
+    <string name="title_activity_progress">Progress</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="title_activity_life_benefits">Life Benefits</string>
+    <string name="title_activity_extra_help">Extra Help</string>
+    <string-array name="motivation_array">
+        <item>Select item below:</item>
+        <item>Present/Future Health</item>
+        <item>Financial Needs</item>
+        <item>Job Prospects</item>
+        <item>Appearance</item>
+        <item>Social Needs</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Maori</item>
+    </string-array>
+
+    <string name="title_activity_life_benefits_money">Money Benefits</string>
+    <string name="title_activity_login">Login</string>
+    <string name="register_button">Register</string>
+    <string name="userName">Username</string>
+    <string name="signInButton">Sign In</string>
+    <string name="passwordText">Password</string>
+    <string name="usernameText">Username</string>
+    <string name="loginButton">Login</string>
+    <string name="title_activity_motivation_list">Motivation List</string>
+    <string name="title_activity_account">Account</string>
+
+    <string name="title_activity_life_benefits_time">Time Benefits</string>
+    <string name="title_activity_life_benefits_health">Health Benefits</string>
+    <string name="title_activity_drawer_layout">DrawerLayout</string>
+
+    <string name="title_LifeBenefits">Life Benefits</string>
+    <string name="title_Facebook">Facebook</string>
+    <string name="title_ExtraHelp">Extra Help</string>
+    <string name="title_WatchVideo">Watch Video</string>
+    <string name="title_Account">Account</string>
+    <string name="title_Motivation">Motivation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_watch_video">Video</string>
+    <string name="title_activity_health">Health</string>
+    <string name="title_activity_finances">Finances</string>
+    <string name="title_activity_job_prospects">Job Prospects</string>
+    <string name="title_activity_looks">Looks</string>
+    <string name="title_activity_others">Others</string>
+    <string name="title_activity_social">Social</string>
+    <string name="title_account_registration">Account Registration</string>
+    <string name="survey6">Email Address</string>
+    <string name="username">Username</string>
+    <string name="Email">Email</string>
+    <string name="Subscribe">Subscribed to push messages</string>
+    <string name="Language">Select Language</string>
+    <string name="update_password">Update Password</string>
+    <string name="log_out">Log Out</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="extra_help">We take smoking as a serious issue, below are some other services to help you quit smoking. Click on any service below to be redirected to their website</string>
+    <string name="finance_title">Quit for your Finances</string>
+    <string name="finance_p1">Smoking is expensive. The amount of money you spend on smoking may surprise you.</string>
+    <string name="finance_p3">Imagine what you could do with that money, you could book a holidays, buy clothes, pay outstanding bills?</string>
+    <string name="finance_p4">Why not open a new savings account or buy a piggy bank to watch your savings grows.</string>
+    <string name="finance_p5">As well as being able to save there are other financial benefits too; you will pay less for health and life insurance and the cost of visiting a doctor.</string>
+    <string name="smoking_quit_date">Smoking Quit Date</string>
+    <string name="days_since">Days since quit smoking</string>
+    <string name="lifespan_regained">Lifespan regained</string>
+    <string name="email">Email Address</string>
+    <string name="name">Name</string>
+    <string name="increase">Increase In:</string>
+    <string name="decrease">Decrease In:</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender E.g Male/Female</string>
+    <string name="dailySmokes">Average Daily Smokes</string>
+    <string name="stopAttempts">Previous Attempts to Stop</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="occupation">Occupation</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="push">Allow Push Notifications</string>
+    <string name="upload_video_p1">Upload a motivational video from yourself or someone else to encourage your progress</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="remove_video">Remove Video</string>
+    <string name="view_facebook_videos">View Facebook Videos</string>
+    <string name="money_benefits_tobacco">*One cigarette is equivalent to 1 gram of tobacco</string>
+    <string name="money_benefits_saved_since">Saved since quit date</string>
+    <string name="money_benefits_annual_save">How much you will save over 1 year</string>
+    <string name="money_benefits_weekly_save">How much you save over 1 week</string>
+    <string name="money_benefits_total_saved">Total Saved</string>
+    <string name="health_12">•\tWithin 24 hours: Your chance of a heart attack decreases.</string>
+    <string name="health_title">Quit for your Health</string>
+    <string name="health_p1">Smoking is the leading cause of preventable death within New Zealand.</string>
+    <string name="health_p2">When you smoke the chemicals in tobacco reach your lungs very quickly, your blood then carries the toxins to every organ in your body.</string>
+    <string name="health_p3">When you quit smoking you will lower your risk of death from:</string>
+    <string name="health_p4">•\tLung cancer</string>
+    <string name="health_p5">•\tHeart disease</string>
+    <string name="health_p6">•\tStroke</string>
+    <string name="health_p7">•\tChronic bronchitis</string>
+    <string name="health_p8">•\tEmphysema</string>
+    <string name="health_p9">•\tAt least 13 other kinds of cancer</string>
+    <string name="health_url1">http://smokefree.gov/rewards-of-quitting</string>
+    <string name="health_p10">The health benefits of being smokefree start almost immediately. Within 20 minutes of being smokefree your blood pressure, body temperature and pulse rate will drop to normal and within 8 hours your Smoker’s breath disappears, the carbon monoxide level in your blood drops and the oxygen level rises to normal.</string>
+    <string name="health_p11">Other health benefits and their timescales are:</string>
+    <string name="health_url2">http://stopsmoking.stanford.edu/facts.html</string>
+    <string name="job_prospects_title">Quit for Your Job Prospects</string>
+    <string name="job_prospects_p1">Being smokefree may assist with your employment as many New Zealand employers are concerned about the health and safety of their workforce and are increasingly encouraging their staff to become smokefree.</string>
+    <string name="job_prospects_p2">Many employers have smokefree policies, which require their buildings and grounds to be smokefree at all times.</string>
+    <string name="looks_title">Quit for Your Looks</string>
+    <string name="looks_p1">Quitting smoking is good for your looks!</string>
+    <string name="looks_p2">When you quit smoking:</string>
+    <string name="looks_p3">•\tYour breath will smell better</string>
+    <string name="looks_p4">•\tStained teeth will get whiter</string>
+    <string name="looks_p5">•\tYour clothes and hair will smell better</string>
+    <string name="looks_p6">•\tYour fingers and fingernails will no longer look yellow</string>
+    <string name="looks_p7">•\tYou’ll have better oral health</string>
+    <string name="looks_p8">•\tYou’ll have a better chance for fewer skin wrinkles</string>
+    <string name="motivation_p1">If you currently smoke, there are many reasons for you to quit.</string>
+    <string name="motivation_p2">There are many rewards of quitting that begin immediately.</string>
+    <string name="motivation_p3">Quitting tobacco will not only improve your health but your finances, self-esteem and your everyday life.</string>
+    <string name="motivation_p4">Let’s look at some of the motivations you may have to quit smoking.</string>
+    <string name="motivation_p5">We shall look at the benefits of being smokefree, some benefits you may not have even thought of:</string>
+    <string name="others_title">Quit for the Benefit of Others</string>
+    <string name="others_p1">By quitting smoking you are protecting those you love.</string>
+    <string name="others_p2">Smoking not only harms your health but also the health of those around you as exposure to secondhand smoke kills around 350 New Zealanders every year.</string>
+    <string name="others_p3">Secondhand smoke contains the same poisonous chemicals that you breathe into your body when you smoke.</string>
+    <string name="others_p4">Children exposed to secondhand smoke are more likely to develop asthma, develop coughs, colds and ear infections.</string>
+    <string name="others_p5">Children and teenagers whose parents or caregivers smoke are seven times more likely to become smokers themselves.</string>
+    <string name="others_p6">By being smokefree you should have a longer, healthier life to spend with family, whanau and friends.</string>
+    <string name="social_title">Quit for Social Benefits</string>
+    <string name="social_p1">We are increasingly expecting places and venues to be smokefree within New Zealand.</string>
+    <string name="social_p2">There are now many places where people are encouraged to be smokefree to protect others from secondhand smoke and to protect children from exposure to smoking.</string>
+    <string name="social_p3">There are a number of smokefree places either in place or being considered including playgrounds, beaches, parks and restaurants.</string>
+    <string name="social_p4">By being smokefree you will no longer need to leave these places for a cigarette or stand outside the venue in the rain and wind!</string>
+
+    <string name="facebook_app_id">994871643937332</string>
+    <string name="health_p13">•\tWithin 48 hours: Your nerve endings start to regroup. Your ability to taste and smell improves.</string>
+    <string name="health_p14">•\tWithin 3 days: Breathing is easier for you.</string>
+    <string name="health_p15">•\tWithin 2 to 3 months: Your circulation improves. Walking becomes easier. Your lung capacity increases up to 30 percent.</string>
+    <string name="health_p16">•\tWithin 1 to 9 months: Sinus congestion and shortness of breath decrease. Cilia that sweep debris from your lungs grow back, increasing your lungs’ ability to handle mucus, clean the lungs, and reduce infection. Your energy increases.</string>
+    <string name="health_p17">•\tWithin 1 year: Your excess risk of coronary disease is half that of a person who smokes.</string>
+    <string name="health_p18">•\tWithin 2 years: Your heart attack risk drops to near normal.</string>
+    <string name="health_p19">•\tWithin 5 years: Lung cancer death rate for the average former pack-a-day smoker decreases by almost half. Your risk of having a stroke reduces. Your risk of developing mouth, throat, and esophageal cancer is half that of a smoker.</string>
+    <string name="health_p20">•\tWithin 10 years: Lung cancer death rate is similar to that of a person who does not smoke. The precancerous cells are replaced.</string>
+    <string name="health_p21">•\tWithin 15 years: Your risk of coronary heart disease is the same as a person who has never smoked.</string>
+    <string name="life_benefits">Life Benefits</string>
+    <string name="motivation">Motivation</string>
+    <string name="facebook">Facebook</string>
+    <string name="extrahelp">Extra Help</string>
+    <string name="video">Motivational Video</string>
+    <string name="settings">Settings</string>
+    <string name="select_date_quit_smoking">Select date you\'ve quit or planning to quit smoking</string>
+    <string name="done">Done</string>
+    <string name="time">Time</string>
+    <string name="money">Money</string>
+    <string name="health">Health</string>
+    <string name="reselect_date">Reselect Date</string>
+    <string name="pulse_rate">Pulse Rate</string>
+    <string name="oxygen_level">Oxygen Level</string>
+    <string name="carbon_monoxide">Carbon Monoxide Expelled</string>
+    <string name="nicotine_expelled">Nicotine Expelled</string>
+    <string name="breathing">Breathing</string>
+    <string name="taste_and_smell">Taste and Smell</string>
+    <string name="energy">Energy</string>
+    <string name="risk_heart_attack">Risk of Heart Attack</string>
+    <string name="risk_lung_cancer">Risk of Lung Cancer</string>
+    <string name="risk_of_copd">Risk of COPD</string>
+    <string name="coughing_and_wheezing">Cough and Wheezing</string>
+    <string name="set_goal">Set Goal</string>
+    <string name="set">Set</string>
+    <string name="add_goal">Add Goal</string>
+    <string name="average_smokes_per_day">Average Cigarettes Smoked Per Day:</string>
+    <string name="remove_goal">Remove Goal</string>
+    <string name="cost">Cost:</string>
+    <string name="survey_p1">Please let us know why you are using this application. You can select more than one.</string>
+    <string name="support">Need Help? Contact Support</string>
+    <string name="date_quit_registration">What date have you or plan to quit? E.g 16 Feb 2016</string>
+    <string name="present_health">Present Health</string>
+    <string name="appearance">Appearance</string>
+    <string name="family_members">Family Members</string>
+    <string name="role_modelling">Role Modelling</string>
+    <string name="employment">Employment Needs</string>
+    <string name="financial_benefits">Financial Benefits</string>
+    <string name="social_needs">Social Needs</string>
+    <string name="nicotine_treatment">Nicotine Treatment</string>
+    <string name="other">Other</string>
+    <string name="title_activity_achievements">Achievements</string>
+    <string name="account">Account</string>
+    <string name="goal_name">Goal Name E.g Car</string>
+    <string name="until_quit_smoking_date">Until quit smoking date</string>
+    <string name="job_prospects">Job Prospects</string>
+    <string name="finances">Finances</string>
+    <string name="others">Others</string>
+    <string name="complete">Complete</string>
+    <string name="extra_help_nicotine">For users that have the aid of Nicotine Replacement Treatment, this will help notify you when to take your treatment</string>
+    <string name="type_of_treatment">Type of Treatment</string>
+    <string name="treatment_duration">How long does your treatment last?</string>
+    <string name="how_many_days">E.g How many days</string>
+    <string name="type_of_treatment_edittext">E.g Pill, Patch, Other</string>
+    <string name="extra_help_nicotine_p2">To remove notifications, set the frequency to 0</string>
+    <string name="days">day(s)</string>
+    <string name="number_of">E.g Number of</string>
+    <string name="extra_help_disclaimer">*Set on treatment day</string>
+</resources>
