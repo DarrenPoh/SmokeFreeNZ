@@ -56,7 +56,7 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name=".LifeBenefits"
+            android:name=".LifeBenefits.LifeBenefits"
             android:label="@string/title_activity_life_benefits"
             android:screenOrientation="portrait" >
         </activity>
@@ -66,7 +66,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".LifeBenefitsMoney"
+            android:name=".LifeBenefits.LifeBenefitsMoney"
             android:label="@string/title_activity_life_benefits_money"
             android:screenOrientation="portrait" >
         </activity>
@@ -75,12 +75,12 @@
             android:label="@string/title_activity_account" >
         </activity>
         <activity
-            android:name=".LifeBenefitsTime"
+            android:name=".LifeBenefits.LifeBenefitsTime"
             android:label="@string/title_activity_life_benefits_time"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".LifeBenefitsHealth"
+            android:name=".LifeBenefits.LifeBenefitsHealth"
             android:label="@string/title_activity_life_benefits_health"
             android:screenOrientation="portrait" >
         </activity>

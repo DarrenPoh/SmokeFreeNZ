@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ListView;
 
+import com.darren.darren.smokewise.LifeBenefits.LifeBenefits;
+
 public class Drawer extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
