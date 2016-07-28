@@ -30,15 +30,12 @@ public class Home extends Drawer implements View.OnClickListener {
 
     FacebookSdk.sdkInitialize(getApplicationContext());
     AppEventsLogger.activateApp(this);
-
-
     LayoutInflater inflater = (LayoutInflater) this
         .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     View contentView = inflater.inflate(com.darren.darren.smokewise.R.layout.activity_home, null, false);
     mDrawer.addView(contentView, 0);
 
     session = new SessionManagement(getApplicationContext());
-
 
     new AlertDialog.Builder(this).setTitle("Reminder").setMessage("Don't forget to view your Motivational Video!")
         .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
@@ -59,7 +56,6 @@ public class Home extends Drawer implements View.OnClickListener {
     linearLayout1 = (LinearLayout) findViewById(com.darren.darren.smokewise.R.id.homeLinearLayout1);
     linearLayout2 = (LinearLayout) findViewById(com.darren.darren.smokewise.R.id.homeLinearLayout2);
     linearLayout3 = (LinearLayout) findViewById(com.darren.darren.smokewise.R.id.homeLinearLayout3);
-
 
     buttonFacebook = (ImageButton) findViewById(com.darren.darren.smokewise.R.id.buttonFacebook);
     buttonLifeBenefits = (ImageButton) findViewById(com.darren.darren.smokewise.R.id.buttonLifeBenefits);
@@ -82,54 +78,39 @@ public class Home extends Drawer implements View.OnClickListener {
     likeView.setObjectIdAndType(
         "https://www.facebook.com/SmokeFree-NZ-796120033855044/",
         LikeView.ObjectType.PAGE);
-
   }
 
   @Override
   public void onClick(View v) {
     switch (v.getId()) {
       case com.darren.darren.smokewise.R.id.buttonSettings:
-
         startActivity(new Intent(this, Account.class));
-
         break;
 
-
       case com.darren.darren.smokewise.R.id.buttonMotivation:
-
         startActivity(new Intent(this, Motivation.class));
-
         break;
 
       case com.darren.darren.smokewise.R.id.buttonExtraHelp:
-
         this.startActivity(new Intent(this, ExtraHelp.class));
-
         break;
 
       case com.darren.darren.smokewise.R.id.buttonFacebook:
-
         try {
           Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/SmokeFree-NZ-796120033855044/"));
           startActivity(intent);
         } catch (Exception e) {
           startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/SmokeFree-NZ-796120033855044/")));
         }
-
         break;
 
       case com.darren.darren.smokewise.R.id.buttonLifeBenefits:
-
         this.startActivity(new Intent(this, LifeBenefits.class));
-
         break;
 
       case com.darren.darren.smokewise.R.id.buttonVideo:
-
         this.startActivity(new Intent(this, WatchVideo.class));
-
         break;
-
     }
 
   }
@@ -137,9 +118,7 @@ public class Home extends Drawer implements View.OnClickListener {
   @Override
   protected void onStart() {
     super.onStart();
-
     if (authenticate()) {
-
     } else {
       startActivity(new Intent(Home.this, MainActivity.class));
       finish();
@@ -149,6 +128,4 @@ public class Home extends Drawer implements View.OnClickListener {
   private boolean authenticate() {
     return session.isLoggedIn();
   }
-
-
 }

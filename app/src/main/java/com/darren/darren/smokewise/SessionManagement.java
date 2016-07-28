@@ -157,33 +157,24 @@ public class SessionManagement {
 
   public HashMap<String, Long> getDays() {
     HashMap<String, Long> days = new HashMap<String, Long>();
-
     days.put(KEY_DAYS, pref.getLong(KEY_DAYS, 0));
-
     return days;
   }
 
   public void setAverageSmokes(int average) {
-
     editor.putInt(KEY_AVERAGE, average);
-
     editor.commit();
   }
 
   public HashMap<String, Integer> getAverageSmokes() {
     HashMap<String, Integer> average = new HashMap<String, Integer>();
-
     average.put(KEY_AVERAGE, pref.getInt(KEY_AVERAGE, 0));
-
     return average;
   }
 
   public void setGoalTitle(String title) {
-
     editor.putBoolean(KEY_HAS_GOAL, true);
-
     editor.putString(KEY_GOAL_TITLE, title);
-
     editor.commit();
   }
 
@@ -200,9 +191,7 @@ public class SessionManagement {
 
   public HashMap<String, Integer> getGoalCost() {
     HashMap<String, Integer> cost = new HashMap<String, Integer>();
-
     cost.put(KEY_GOAL_COST, pref.getInt(KEY_GOAL_COST, 0));
-
     return cost;
   }
 
@@ -226,7 +215,6 @@ public class SessionManagement {
   public HashMap<String, Integer> getTotalSaved() {
     HashMap<String, Integer> saved = new HashMap<String, Integer>();
     saved.put(KEY_TOTAL_SAVED, pref.getInt(KEY_TOTAL_SAVED, 0));
-
     return saved;
 
   }
@@ -249,9 +237,7 @@ public class SessionManagement {
 
   public HashMap<String, String> getVideoPath() {
     HashMap<String, String> path = new HashMap<String, String>();
-
     path.put(KEY_VIDEO_PATH, pref.getString(KEY_VIDEO_PATH, null));
-
     return path;
   }
 
@@ -261,10 +247,7 @@ public class SessionManagement {
   }
 
   public void setSavedDate(String date) {
-
-
     editor.putString(KEY_SAVED_DATE, date);
-
     editor.commit();
   }
 

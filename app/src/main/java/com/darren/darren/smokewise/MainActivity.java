@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,14 +15,13 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.share.widget.LikeView;
-
+import com.darren.darren.smokewise.app.AppConfig;
+import com.darren.darren.smokewise.app.AppController;
 import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,11 +41,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     SessionManagement session;
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -55,16 +48,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(com.darren.darren.smokewise.R.layout.activity_main);
 
         db = new SQLiteHandler(getApplicationContext());
-
-
-
-
         inputEmail = (EditText) findViewById(com.darren.darren.smokewise.R.id.textViewEmail);
         inputPassword = (EditText) findViewById(com.darren.darren.smokewise.R.id.textViewPassword);
         loginButton = (Button) findViewById(com.darren.darren.smokewise.R.id.loginButton);
         textViewRegister =  (TextView) findViewById(com.darren.darren.smokewise.R.id.textViewRegister);
         textViewSupport = (TextView) findViewById(R.id.textViewSupport);
-        RelativeLayout mainActivity = (RelativeLayout) findViewById(R.id.mainActivityLayout);
 
         // Progress dialog
         pDialog = new ProgressDialog(this);
@@ -86,15 +74,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         //Facebook Integration
         FacebookSdk.sdkInitialize(getApplicationContext());
-
-/*
-        LikeView likeView = (LikeView) findViewById(R.id.like_view);
-        likeView.setObjectIdAndType(
-                "https://www.facebook.com/SmokeFree-NZ-796120033855044",
-                LikeView.ObjectType.PAGE);
-
-        mainActivity.addView(likeView);*/
-
 
     }
 

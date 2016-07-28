@@ -48,7 +48,6 @@ public class Account extends Drawer implements View.OnClickListener {
     imageView5000 = (ImageView) findViewById(R.id.imageView5000);
     imageView10000 = (ImageView) findViewById(R.id.imageView10000);
 
-
     //RZLTS PUSH SERVICE
     AppInbox.startInbox(this, "6medyGEK9mCn68cTjBm06n6FkvNNtxL0a1n95o8B-Fs", "207149040029", "null", "null", "null", "null", "", "dpoh89@gmail.com", Gender.MALE, 0);
     RelativeLayout rlLayout = (RelativeLayout) this.findViewById(R.id.relativeLayout3);
@@ -84,7 +83,6 @@ public class Account extends Drawer implements View.OnClickListener {
 
     HashMap<String, Long> days = session.getDays();
     savedDays = days.get(SessionManagement.KEY_DAYS);
-
 
     Log.d("saved total", "" + savedTotalPref);
 

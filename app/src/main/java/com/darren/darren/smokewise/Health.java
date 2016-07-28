@@ -2,12 +2,9 @@ package com.darren.darren.smokewise;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -53,16 +50,13 @@ public class Health extends Drawer implements View.OnClickListener{
         buttonFinances = (Button) findViewById(R.id.buttonFinances);
         buttonFinances.setOnClickListener(this);
 
-
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-
             case R.id.buttonFinances:
                 startActivity(new Intent(Health.this, Finances.class));
-
                 break;
         }
     }

@@ -20,10 +20,7 @@ public class LifeBenefitsTime extends Drawer implements View.OnClickListener{
     int lifeRegained, hours, day, minutes;
     String savedDate;
 
-
     SessionManagement session;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
