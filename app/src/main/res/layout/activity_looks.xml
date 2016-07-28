@@ -27,7 +27,8 @@
                 style="@style/ButtonCustom"
                 android:padding="10dp"
                 android:layout_margin="10dp"
-                android:layout_weight="0.5"/>
+                android:layout_weight="0.5"
+                android:gravity="center|left"/>
 
 
             <Button
@@ -38,7 +39,8 @@
                 style="@style/ButtonCustom"
                 android:padding="10dp"
                 android:layout_margin="10dp"
-                android:layout_weight="0.5"/>
+                android:layout_weight="0.5"
+                android:gravity="center|right"/>
 
 
         </LinearLayout>

@@ -24,7 +24,7 @@
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+            android:value="994871643937332" />
 
         <provider android:authorities="com.facebook.app.FacebookContentProvider994871643937332"
                   android:name="com.facebook.FacebookContentProvider"
