@@ -77,14 +77,13 @@
 
                     <Button
                         android:id="@+id/buttonHealth"
-                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
 
                         android:layout_weight="0.5"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/roundcorner"
+                        style="@style/ButtonCustom"
                         android:clickable="true"
                         android:scaleType="fitCenter"
                         android:text="@string/present_health"
@@ -92,13 +91,12 @@
 
                     <Button
                         android:id="@+id/buttonFinances"
-                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="0.5"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/roundcorner"
+                        style="@style/ButtonCustom"
                         android:clickable="true"
                         android:scaleType="fitCenter"
                         android:text="@string/finances"/>
@@ -112,26 +110,24 @@
 
                     <Button
                         android:id="@+id/buttonJobProspects"
-                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="0.5"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/roundcorner"
+                        style="@style/ButtonCustom"
                         android:clickable="true"
                         android:scaleType="fitCenter"
                         android:text="@string/job_prospects"/>
 
                     <Button
                         android:id="@+id/buttonAppearance"
-                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="0.5"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/roundcorner"
+                        style="@style/ButtonCustom"
                         android:clickable="true"
                         android:scaleType="fitCenter"
                         android:text="@string/appearance"/>
@@ -145,26 +141,24 @@
 
                     <Button
                         android:id="@+id/buttonOthers"
-                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="0.5"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/roundcorner"
+                        style="@style/ButtonCustom"
                         android:clickable="true"
                         android:scaleType="fitCenter"
                         android:text="@string/others"/>
 
                     <Button
                         android:id="@+id/buttonSocial"
-                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="0.5"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/roundcorner"
+                        style="@style/ButtonCustom"
                         android:clickable="true"
                         android:scaleType="fitCenter"
                         android:text="@string/social_needs"/>

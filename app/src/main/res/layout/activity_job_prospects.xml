@@ -29,20 +29,22 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonFinances"
                 android:text="&lt; Finances"
-                android:background="@drawable/roundcorner"
+                style="@style/ButtonCustom"
                 android:padding="10dp"
                 android:layout_margin="10dp"
-                android:layout_weight="0.5"/>
+                android:layout_weight="0.5"
+                android:gravity="center|left"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Appearance >"
                 android:id="@+id/buttonAppearance"
-                android:background="@drawable/roundcorner"
+                style="@style/ButtonCustom"
                 android:padding="10dp"
                 android:layout_margin="10dp"
-                android:layout_weight="0.5"/>
+                android:layout_weight="0.5"
+                android:gravity="center|right"/>
 
 
         </LinearLayout>

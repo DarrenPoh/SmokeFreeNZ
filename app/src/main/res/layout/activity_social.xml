@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/buttonOthers"
                     android:text="&lt; Others"
-                    android:background="@drawable/roundcorner"
+                    style="@style/ButtonCustom"
                     android:padding="10dp"
                     android:layout_margin="10dp"
                     android:layout_weight="0.5"/>

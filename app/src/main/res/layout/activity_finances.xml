@@ -1,16 +1,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.darren.darren.smokewise.Finances"
-    android:background="@color/motivation_bg">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/motivation_bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.darren.darren.smokewise.Finances">
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -21,107 +23,108 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:id="@+id/buttonHealth"
-                    android:text="&lt; Health"
-                    android:background="@drawable/roundcorner"
-                    android:padding="10dp"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0.5"/>
-
-                <Button
+                    style="@style/ButtonCustom"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Job Prospects >"
-                    android:id="@+id/buttonJobProspects"
-                    android:background="@drawable/roundcorner"
-                    android:padding="10dp"
                     android:layout_margin="10dp"
                     android:layout_weight="0.5"
-                    />
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:text="&lt; Health"/>
+
+                <Button
+                    android:id="@+id/buttonJobProspects"
+                    style="@style/ButtonCustom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:padding="10dp"
+                    android:text="Job Prospects >"/>
 
 
             </LinearLayout>
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/finance_title"
                 android:id="@+id/textViewFinanceTitle"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/finance_title"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"/>
+
+            <ImageView
                 android:id="@+id/imageViewFinances"
-                android:src="@drawable/finances"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_gravity="center"/>
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/finance_p1"
-                android:id="@+id/textViewFinances1" />
-
-            <TextView
-                android:paddingTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/textViewFinances2"
-                android:layout_below="@+id/textViewFinances1"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:text="java text" />
-
-            <TextView
-                android:paddingTop="10dp"
+                android:layout_gravity="center"
                 android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/finances"/>
+
+            <TextView
+                android:id="@+id/textViewFinances1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/finance_p1"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewFinances2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewFinances1"
+                android:paddingTop="10dp"
+                android:text="java text"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewFinances3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:text="@string/finance_p3"
-                android:id="@+id/textViewFinances3" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/imageViewFinances2"
-                android:src="@drawable/finances2"
-                android:layout_gravity="center"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/finances2"/>
 
             <TextView
+                android:id="@+id/textViewFinances4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/finance_p4"
-                android:id="@+id/textViewFinances4" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <TextView
 
-                android:paddingBottom="10dp"
+                android:id="@+id/textViewFinances5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:paddingBottom="10dp"
                 android:text="@string/finance_p5"
-                android:id="@+id/textViewFinances5"/>
-
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
 
         </LinearLayout>
 
-        </ScrollView>
+    </ScrollView>
 
 </RelativeLayout>

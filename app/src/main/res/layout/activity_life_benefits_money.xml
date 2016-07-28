@@ -54,12 +54,11 @@
                     />
 
                 <Button
-                    style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/set"
                     android:id="@+id/buttonEditSmokes"
-                    android:background="@drawable/roundcorner"
+                    style="@style/ButtonCustom"
                     android:padding="10dp"/>
             </LinearLayout>
 
@@ -152,7 +151,7 @@
                 android:id="@+id/buttonAddGoal"
 
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/roundcorner"
+                style="@style/ButtonCustom"
                 android:padding="10dp"/>
 
             <LinearLayout
@@ -213,12 +212,12 @@
                         />
 
                     <Button
-                        style="?android:attr/buttonStyleSmall"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/set_goal"
                         android:id="@+id/buttonSetGoal"
-                        android:background="@drawable/roundcorner"
+                        style="@style/ButtonCustom"
                         android:padding="10dp"/>
 
                 </LinearLayout>
@@ -229,7 +228,7 @@
                     android:text="@string/remove_goal"
                     android:id="@+id/buttonRemoveGoal"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/roundcorner"
+                    style="@style/ButtonCustom"
                     android:padding="10dp"/>
 
             </LinearLayout>

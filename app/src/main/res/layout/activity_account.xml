@@ -224,7 +224,7 @@
         android:id="@+id/buttonLogOut"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/roundcorner"
+        style="@style/ButtonCustom"
         android:padding="10dp"/>
 
 

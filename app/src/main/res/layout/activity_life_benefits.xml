@@ -64,7 +64,7 @@
             android:layout_margin="10dp"
             android:layout_weight="0.50"
             android:adjustViewBounds="true"
-            android:background="@drawable/roundcorner"
+            style="@style/ButtonCustom"
             android:src="@drawable/ic_calendar_black_48dp"/>
 
         <ImageButton
@@ -75,7 +75,7 @@
             android:layout_margin="10dp"
             android:layout_weight="0.50"
             android:adjustViewBounds="true"
-            android:background="@drawable/roundcorner"
+            style="@style/ButtonCustom"
             android:src="@drawable/ic_currency_usd_black_48dp"/>
 
     </LinearLayout>
@@ -128,7 +128,7 @@
             android:layout_margin="10dp"
             android:layout_weight="0.50"
             android:adjustViewBounds="true"
-            android:background="@drawable/roundcorner"
+            style="@style/ButtonCustom"
             android:src="@drawable/ic_heart_pulse_black_48dp"/>
 
         <ImageButton
@@ -139,7 +139,7 @@
             android:layout_margin="10dp"
             android:layout_weight="0.50"
             android:adjustViewBounds="true"
-            android:background="@drawable/roundcorner"
+            style="@style/ButtonCustom"
             android:src="@drawable/ic_clock_black_48dp"/>
     </LinearLayout>
 
