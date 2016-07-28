@@ -2,6 +2,9 @@
 
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light">
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="colorPrimaryLight">@color/primary_light_color</item>
     </style>
     <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>

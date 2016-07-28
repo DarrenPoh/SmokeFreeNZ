@@ -1,12 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.darren.darren.smokewise.Health"
-    android:background="@color/motivation_bg"
-    >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/motivation_bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.darren.darren.smokewise.Health">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -15,253 +16,220 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    />
+                    android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/buttonFinances"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Finances >"
-                    android:id="@+id/buttonFinances"
-                    android:background="@drawable/roundcorner"
-
                     android:layout_margin="10dp"
-                    android:layout_weight="0.5"/>
-
-
+                    android:layout_weight="0.5"
+                    android:background="@drawable/roundcorner"
+                    android:text="Finances >"/>
             </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_title"
-        android:id="@+id/textViewHealthTitle"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageViewHealth"
-        android:layout_below="@+id/textViewHealthTitle"
-        android:src="@drawable/healthimage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="center"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p1"
-        android:id="@+id/textViewHealth1"
-        android:layout_below="@+id/imageViewHealth"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p2"
-        android:id="@+id/textViewHealth2"
-        android:layout_below="@+id/textViewHealth1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p3"
-        android:id="@+id/textViewHealth3"
-        android:layout_below="@+id/textViewHealth2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:paddingTop="10dp"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p4"
-        android:id="@+id/textViewHealth4"
-        android:layout_below="@+id/textViewHealth3"
-        android:layout_alignRight="@+id/textViewHealthTitle"
-        android:layout_alignEnd="@+id/textViewHealthTitle"
-        android:layout_marginRight="32dp"
-        android:layout_marginEnd="32dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p5"
-        android:id="@+id/textViewHealth5"
-        android:layout_below="@+id/textViewHealth4"
-        android:layout_alignLeft="@+id/textViewHealth4"
-        android:layout_alignStart="@+id/textViewHealth4" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p6"
-        android:id="@+id/textViewHealth6"
-        android:layout_below="@+id/textViewHealth5"
-        android:layout_alignLeft="@+id/textViewHealth5"
-        android:layout_alignStart="@+id/textViewHealth5" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p7"
-        android:id="@+id/textViewHealth7"
-        android:layout_below="@+id/textViewHealth6"
-        android:layout_alignLeft="@+id/textViewHealth6"
-        android:layout_alignStart="@+id/textViewHealth6" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p8"
-        android:id="@+id/textViewHealth8"
-        android:layout_below="@+id/textViewHealth7"
-        android:layout_alignLeft="@+id/textViewHealth7"
-        android:layout_alignStart="@+id/textViewHealth7" />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/health_p9"
-        android:id="@+id/textViewHealth9"
-        android:layout_below="@+id/textViewHealth8"
-        android:layout_alignLeft="@+id/textViewHealth8"
-        android:layout_alignStart="@+id/textViewHealth8" />
-
             <TextView
-                android:paddingTop="10dp"
+                android:id="@+id/textViewHealthTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/health_title"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageViewHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/healthimage"/>
+
+            <TextView
+                android:id="@+id/textViewHealth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/health_p1"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewHealth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_p2"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewHealth3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_p3"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewHealth4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:paddingTop="10dp"
+                android:text="@string/health_p4"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewHealth5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_p5"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewHealth6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_p6"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewHealth7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_p7"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/textViewHealth8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_p8"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+
+                android:id="@+id/textViewHealth9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_p9"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/healthURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:text="@string/health_url1"
-                android:autoLink="web"
-
-                android:id="@+id/healthURL" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <TextView
+                android:id="@+id/textViewHealth10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p10"
-                android:id="@+id/textViewHealth10" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <TextView
+                android:id="@+id/textViewHealth11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p11"
-                android:id="@+id/textViewHealth11" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <TextView
-                android:paddingTop="10dp"
+                android:id="@+id/textViewHealth12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:paddingTop="10dp"
                 android:text="@string/health_12"
-                android:id="@+id/textViewHealth12" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p13"
-                android:id="@+id/textViewHealth13" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p14"
-                android:id="@+id/textViewHealth14" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p15"
-                android:id="@+id/textViewHealth15" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p16"
-                android:id="@+id/textViewHealth16" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p17"
-                android:id="@+id/textViewHealth17" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p18"
-                android:id="@+id/textViewHealth18" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p19"
-                android:id="@+id/textViewHealth19" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p20"
-                android:id="@+id/textViewHealth20" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
             <TextView
+                android:id="@+id/textViewHealth21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/health_p21"
-                android:id="@+id/textViewHealth21" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <TextView
-                android:paddingTop="10dp"
+                android:id="@+id/healthURL2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/health_url2"
                 android:autoLink="web"
-
-                android:id="@+id/healthURL2" />
-
-
+                android:paddingTop="10dp"
+                android:text="@string/health_url2"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
         </LinearLayout>
-
     </ScrollView>
-
-
 </RelativeLayout>

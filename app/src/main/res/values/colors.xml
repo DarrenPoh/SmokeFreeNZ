@@ -30,5 +30,11 @@
     <item name="light_green" type="color">#98FB98</item>
     <item name="transparent_dark_blue" type="color">#805D8AA8</item>
 
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#2196F3</color>
 
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#1976D2</color>
+
+    <color name="primary_light_color">#BBDEFB</color>
 </resources>
