@@ -1,25 +1,17 @@
 package com.darren.darren.smokewise;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.Bundle;
-import android.widget.Toast;
-
-
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
-
-import java.util.HashMap;
 
 /**
  * Created by Darren on 23-Mar-16.
@@ -45,7 +37,6 @@ public class AlarmReceiver extends BroadcastReceiver{
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
 
         Notification notification = builder.setContentTitle("SmokeFree NZ")
-
                 .setContentText("Dont forget to take your Nicotine Treatment!")
                 .setTicker("New Message Alert!")
                 .setLargeIcon(bm)
