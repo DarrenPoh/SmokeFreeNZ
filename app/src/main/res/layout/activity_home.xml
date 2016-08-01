@@ -94,31 +94,33 @@
                 android:orientation="horizontal"
                 android:weightSum="1.0">
 
-                <FrameLayout
+<!--                <FrameLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="0.5"
                     android:elevation="4dp"
-                    >
+                    >-->
 
                     <ImageButton
                         android:id="@+id/buttonFacebook"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
                         android:adjustViewBounds="true"
                         style="@style/ButtonCustom"
                         android:src="@drawable/ic_facebook_box_black_48dp"/>
 
-                    <com.facebook.share.widget.LikeView
+<!--                    <com.facebook.share.widget.LikeView
                         android:id="@+id/likeView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:elevation="5dp"
-                        />
-
-                </FrameLayout>
+                        />-->
+<!--
+                </FrameLayout>-->
 
                 <ImageButton
                     android:id="@+id/buttonExtraHelp"

@@ -12,9 +12,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import com.darren.darren.smokewise.LifeBenefits.LifeBenefits;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.share.widget.LikeView;
 
 public class Home extends Drawer implements View.OnClickListener {
 
@@ -28,8 +25,9 @@ public class Home extends Drawer implements View.OnClickListener {
     super.onCreate(savedInstanceState);
     //setContentView(R.layout.activity_home);
 
-    FacebookSdk.sdkInitialize(getApplicationContext());
-    AppEventsLogger.activateApp(this);
+/*    FacebookSdk.sdkInitialize(getApplicationContext());
+    AppEventsLogger.activateApp(this);*/
+
     LayoutInflater inflater = (LayoutInflater) this
         .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     View contentView = inflater.inflate(com.darren.darren.smokewise.R.layout.activity_home, null, false);
@@ -71,13 +69,13 @@ public class Home extends Drawer implements View.OnClickListener {
     buttonVideo.setOnClickListener(this);
     buttonSettings.setOnClickListener(this);
 
-    LikeView likeView = (LikeView) findViewById(R.id.likeView);
+/*    LikeView likeView = (LikeView) findViewById(R.id.likeView);
     likeView.setLikeViewStyle(LikeView.Style.STANDARD);
     likeView.setAuxiliaryViewPosition(LikeView.AuxiliaryViewPosition.INLINE);
 
     likeView.setObjectIdAndType(
         "https://www.facebook.com/SmokeFree-NZ-796120033855044/",
-        LikeView.ObjectType.PAGE);
+        LikeView.ObjectType.PAGE);*/
   }
 
   @Override

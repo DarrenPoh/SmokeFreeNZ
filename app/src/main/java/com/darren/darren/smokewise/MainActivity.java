@@ -18,7 +18,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.darren.darren.smokewise.app.AppConfig;
 import com.darren.darren.smokewise.app.AppController;
 import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -338,7 +337,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onResume();
 
         // Logs 'install' and 'app activate' App Events.
-        AppEventsLogger.activateApp(this);
+        //AppEventsLogger.activateApp(this);
     }
 
     @Override
@@ -346,7 +345,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onPause();
 
         // Logs 'app deactivate' App Event.
-        AppEventsLogger.deactivateApp(this);
+        //AppEventsLogger.deactivateApp(this);
     }
 
     @Override
